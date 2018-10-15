@@ -5,80 +5,133 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html{
+    /*font-family: font stack required for body text */
     font-size: 16px;
     line-height: 1.6;
-    /*font-family: font stack required for body text */
+    font-family: 'Spinnaker', 'Tahoma', sans-serif;
 }
+
 h1, h2, h3, h4{
     /*font-family: font stack required for headings */
+    font-family: 'IM Fell English SC', 'Courier New', serif;
+    font-size: 2.827em;
 }
+
 p{
-    
 }
+
 .container{
-    
+    max-width: 1500px;
+    margin:auto;
+    background-color: hsl(42, 0%, 0%);    
 }
+
 .subnav{
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: flex-end;
+    background-color: hsl(42, 91%, 52%);    
 }
+
 .subnav a{
-    
+    text-decoration: none;
+    font-weight: 9000px;
+    padding: 0em 1em;
+    color: hsl(104, 0%, 0%);
 }
+
 .mainnav{
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: hsl(42, 91%, 52%);    
 }
+
 .mainnav a{
-    
+    text-decoration: none;
+    color:hsl(104, 0%, 0%);
 }
+
 .masthead{
+    background-color: hsl(104, 91%, 85%);
     
 }
+
 .times-logo{
-    
+    display: block;
+    margin: auto;
+    background-color: hsl(104, 100%, 85%);    
 }
+
 .masthead h1{
-    
+    color: hsl(42, 95%, 51%);
+    text-align: center;
+    font-size: 3.998em;
 }
+
 .content{
-    
 }
+
 .content .story{
-    
+    background-color: hsl(42, 100%, 85%);
 }
-.story.lead-story{
-    
+
+.lead-story.story h1{
+    font-size: 3.998em;
 }
+
+.story.lead-story p{
+    font-size: 1.414em;    
+}
+
 h1.story-title{
-    
+    background-color: hsl(112, 100%, 85%);
+    padding: 2rem;
 }
+
 .story img{
-    
+    float: right;
+    margin: auto;
 }
+
 .story p{
-    
+    padding: 0.75em;
 }
+
 .story blockquote{
+    padding-left: 2em;
     quotes: "\201E" "\201D";
 }
+
 .story blockquote::before{
     content: open-quote;
 }
+
 .story blockquote::after{
     content: close-quote;
 }
+
 .story p.byline{
-    
+    padding: 1em;
 }
+
 p.byline span.author{
-    
+    padding: 0.5em;
 }
+
 p.byline span.pub{
-    
+    padding: 0.5em;
 }
+
 .foot{
-    
+    background-color: hsl(42, 91%, 52%);    
 }
+
 .foot p{
-    
+    display:flex;
+    justify-content:center;
 }
